@@ -17,7 +17,7 @@ public class CalculateTipTest extends BaseTest{
         SettingsPage settingsPage = new SettingsPage(driver);
         settingsPage.clear();
         settingsPage.forTipPercentage("5.0");
-        settingsPage.clickOnSaveSettingsButton();  //!!!!!!!!
+        settingsPage.clickOnSaveSettingsButton();
 
         mainPage.forBillAmount("100");
         mainPage.clickOnCalcTipButton();

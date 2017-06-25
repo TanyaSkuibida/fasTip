@@ -16,7 +16,7 @@ public class SettingsPage extends BasePage{
     @AndroidFindBy(id = "tipPercentageEditText")
     private MobileElement tipPercentageEditText;
 
-    @AndroidFindBy(accessibility = "saveSettingsButton")
+    @AndroidFindBy(id = "saveSettingsButton")
     private MobileElement saveSettingsButton;
 
     public void clear () {
@@ -28,8 +28,9 @@ public class SettingsPage extends BasePage{
     }
 
     public MainPage clickOnSaveSettingsButton() {
-        saveSettingsButton.click(); //!!!!!!!!!!!!!!1
-        return new MainPage (driver);
+        saveSettingsButton.click();
+        return new MainPage(driver);
+
     }
 
 }
